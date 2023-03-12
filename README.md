@@ -1,5 +1,5 @@
 # Flatpak-remotes
-A list of public Flatpak repositories
+A list of public Flatpak repositories. Feel free to add missing ones!
 
 ## Flathub
 
