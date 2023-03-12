@@ -30,9 +30,11 @@ A list of public Flatpak repositories. Feel free to add missing ones!
 [Infos here](http://endlessm.github.io/eos-knowledge-lib/contributing)
 
 regular
+
     flatpak remote-add --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
     
 nightly
+
     flatpak remote-add --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
     
  
