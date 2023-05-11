@@ -35,4 +35,9 @@ nightly
 
     flatpak remote-add --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
     
+## [PureOS](https://puri.sm/posts/introducing-flatpaks-on-pureos/)
+
+```
+flatpak remote-add PureOS https://store.puri.sm/repo/stable/pureos.flatpakrepo --user
+```
  
