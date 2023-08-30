@@ -25,6 +25,11 @@ A list of public Flatpak repositories. Feel free to add missing ones!
 
     flatpak remote-add --if-not-exists PureOS https://store.puri.sm/repo/stable/pureos.flatpakrepo
 
+## [Igalia](https://software.igalia.com/)
+for [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/) and [Revolt](https://github.com/aperezdc/revolt/)
+
+    flatpak remote-add --if-not-exists igalia https://software.igalia.com/flatpak-refs/igalia.flatpakrepo
+
 # unstable Repositories
 
 ## [Flathub Beta](https://discourse.flathub.org/t/how-to-use-flathub-beta/2111)
