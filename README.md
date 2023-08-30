@@ -18,12 +18,12 @@ A list of public Flatpak repositories. Feel free to add missing ones!
 
 ## [EndlessOS](http://endlessm.github.io/eos-knowledge-lib/contributing)
 
-    flatpak remote-add --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
+    flatpak remote-add --if-not-exists --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
     
     
 ## [PureOS](https://puri.sm/posts/introducing-flatpaks-on-pureos/)
 
-    flatpak remote-add PureOS https://store.puri.sm/repo/stable/pureos.flatpakrepo
+    flatpak remote-add --if-not-exists PureOS https://store.puri.sm/repo/stable/pureos.flatpakrepo
 
 # unstable Repositories
 
@@ -33,7 +33,7 @@ A list of public Flatpak repositories. Feel free to add missing ones!
 
 ## EndlessOS Nightly
 
-    flatpak remote-add --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
+    flatpak remote-add --if-not-exists --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
 
  ## [KDE Nightly](https://apps.kde.org/)
 
@@ -48,3 +48,8 @@ A list of public Flatpak repositories. Feel free to add missing ones!
 (Flathub needed for dependencies)
 
     flatpak remote-add --if-not-exists eclipse-nightly https://download.eclipse.org/linuxtools/flatpak-I-builds/eclipse.flatpakrepo
+
+## WebKit SDK for Epiphany Canary (GNOME Nightly)
+(together with GNOME Nightly)
+
+    flatpak remote-add --if-not-exists https://software.igalia.com/flatpak-refs/webkit-sdk.flatpakrepo
