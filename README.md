@@ -17,6 +17,7 @@ A list of public Flatpak repositories. Feel free to add missing ones!
 
 
 ## [EndlessOS](http://endlessm.github.io/eos-knowledge-lib/contributing)
+Key expired 2021!
 
     flatpak remote-add --if-not-exists --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
     
