@@ -6,7 +6,23 @@ A list of public Flatpak repositories. Feel free to add missing ones!
 ## [Flathub](https://flathub.org)
 
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-  
+
+Flathub also has subsets, allowing you to exclude apps with certain antifeatures.
+
+Verified: Only Apps supported by upstream (official) Developers end up here. Quite a few are missing:
+
+    flatpak remote-add --if-not-exists --subset=verified flathub-verified https://flathub.org/repo/flathub.flatpakrepo
+
+FLOSS: only Open Source Apps end up here
+
+  flatpak remote-add --if-not-exists --subset=floss flathub-floss https://flathub.org/repo/flathub.flatpakrepo  
+
+FLOSS & Verified: least apps, highest trustworthiness
+
+    flatpak remote-add --if-not-exists --subset=verified_floss flathub-verified_floss https://flathub.org/repo/flathub.flatpakrepo
+
+If someone finds the link to the docs, please post it, I am again unable to find it.
+
 ## [Fedora Flatpaks](https://fedoraproject.org/wiki/SIGs/Flatpak#Why_do_we_need_Fedora_Flatpaks?)
 
     flatpak remote-add --if-not-exists fedora https://registry.fedoraproject.org
