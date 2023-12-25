@@ -9,21 +9,27 @@ A list of public Flatpak repositories. Feel free to add missing ones!
 
 Flathub also has subsets, allowing you to exclude apps with certain antifeatures.
 
-Verified: Only Apps supported by upstream (official) Developers end up here. Quite a few are missing:
+### Verified
+Only Apps supported by upstream (official) Developers end up here. Quite a few are missing
 
     flatpak remote-add --if-not-exists --subset=verified flathub-verified https://flathub.org/repo/flathub.flatpakrepo
 
-FLOSS: only Open Source Apps end up here
+### FLOSS
+only Open Source Apps end up here. This should calm down Richard Stallman
 
-  flatpak remote-add --if-not-exists --subset=floss flathub-floss https://flathub.org/repo/flathub.flatpakrepo  
+    flatpak remote-add --if-not-exists --subset=floss flathub-floss https://flathub.org/repo/flathub.flatpakrepo  
 
-FLOSS & Verified: least apps, highest trustworthiness
+### FLOSS & Verified
+least apps, highest trustworthiness
 
     flatpak remote-add --if-not-exists --subset=verified_floss flathub-verified_floss https://flathub.org/repo/flathub.flatpakrepo
+
+the `flatpak remote-modify --subset=X` command is currently broken and [there is no `subset=all`](https://github.com/flatpak/flatpak/issues/5637) so this is not recommended.
 
 If someone finds the link to the docs, please post it, I am again unable to find it.
 
 ## [Fedora Flatpaks](https://fedoraproject.org/wiki/SIGs/Flatpak#Why_do_we_need_Fedora_Flatpaks?)
+Apps built with Fedoras built system and own runtime. Up to date, pretty secure, mostly not officially supported but packaged by Fedora Contributors. The list is also pretty small, so many people just remove it. It is the default on Fedora and will stay this, legal reasons.
 
     flatpak remote-add --if-not-exists fedora https://registry.fedoraproject.org
     
@@ -53,6 +59,8 @@ for [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/) and 
 
     flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
 
+subsets should work here too
+
 ## EndlessOS Nightly
 
     flatpak remote-add --if-not-exists --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
@@ -64,7 +72,6 @@ for [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/) and 
 ## [GNOME Nightly](https://wiki.gnome.org/Apps/Nightly)
 
     flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
-
     
 ## [Eclipse Nightly](http://eclipse.matbooth.co.uk/flatpak/nightlies.html)
 (Flathub needed for dependencies)
