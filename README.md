@@ -17,12 +17,12 @@ Only Apps supported by upstream (official) Developers end up here. Quite a few a
     flatpak remote-add --if-not-exists --subset=verified flathub-verified https://flathub.org/repo/flathub.flatpakrepo
 
 #### FLOSS
-only Open Source Apps end up here. This should calm down Richard Stallman
+Only Open Source Apps end up here. This should calm down Richard Stallman
 
     flatpak remote-add --if-not-exists --subset=floss flathub-floss https://flathub.org/repo/flathub.flatpakrepo  
 
 #### FLOSS & Verified
-least apps, highest trustworthiness
+Least apps, highest trustworthiness
 
     flatpak remote-add --if-not-exists --subset=verified_floss flathub-verified_floss https://flathub.org/repo/flathub.flatpakrepo
 
@@ -47,11 +47,12 @@ Key expired 2021!
     
     
 ## [PureOS](https://puri.sm/posts/introducing-flatpaks-on-pureos/)
+Often outdated, but "more secure" apps, from the Purism developers.
 
     flatpak remote-add --if-not-exists PureOS https://store.puri.sm/repo/stable/pureos.flatpakrepo
 
 ## [Igalia](https://software.igalia.com/)
-for [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/), the Webkit SDK and [Revolt](https://github.com/aperezdc/revolt/) (unmaintained)
+For [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/), the Webkit SDK and [Revolt](https://github.com/aperezdc/revolt/) (unmaintained)
 
     flatpak remote-add --if-not-exists igalia https://software.igalia.com/flatpak-refs/igalia.flatpakrepo
 
@@ -80,7 +81,7 @@ subsets should work here too
 
     flatpak remote-add --if-not-exists eclipse-nightly https://download.eclipse.org/linuxtools/flatpak-I-builds/eclipse.flatpakrepo
 
-## WebKit SDK for Epiphany Canary (GNOME Nightly)
+## WebKit SDK for Epiphany Canary
 (together with GNOME Nightly)
 
     flatpak remote-add --if-not-exists https://software.igalia.com/flatpak-refs/webkit-sdk.flatpakrepo
