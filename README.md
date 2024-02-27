@@ -1,6 +1,8 @@
 # Flatpak-remotes
 A list of public Flatpak repositories. Feel free to add missing ones!
 
+Use the `--user` flag to install them for this user only and remove the `flatpak` group / root privilege dependency. This will break some apps that rely on elevated privileges for hardware access, like [GPU Screen Recorder](https://flathub.org/apps/com.dec05eba.gpu_screen_recorder). When installing as system repo, use `usermod -aG flatpak $USER` or an equivalent command.
+
 # Stable repositories
 
 ## [Flathub](https://flathub.org)
@@ -9,17 +11,17 @@ A list of public Flatpak repositories. Feel free to add missing ones!
 
 Flathub also has subsets, allowing you to exclude apps with certain antifeatures.
 
-### Verified
+#### Verified
 Only Apps supported by upstream (official) Developers end up here. Quite a few are missing
 
     flatpak remote-add --if-not-exists --subset=verified flathub-verified https://flathub.org/repo/flathub.flatpakrepo
 
-### FLOSS
+#### FLOSS
 only Open Source Apps end up here. This should calm down Richard Stallman
 
     flatpak remote-add --if-not-exists --subset=floss flathub-floss https://flathub.org/repo/flathub.flatpakrepo  
 
-### FLOSS & Verified
+#### FLOSS & Verified
 least apps, highest trustworthiness
 
     flatpak remote-add --if-not-exists --subset=verified_floss flathub-verified_floss https://flathub.org/repo/flathub.flatpakrepo
@@ -29,7 +31,7 @@ the `flatpak remote-modify --subset=X` command is currently broken and [there is
 If someone finds the link to the docs, please post it, I am again unable to find it.
 
 ## [Fedora Flatpaks](https://fedoraproject.org/wiki/SIGs/Flatpak#Why_do_we_need_Fedora_Flatpaks?)
-Apps built with Fedoras built system and own runtime. Up to date, pretty secure, mostly not officially supported but packaged by Fedora Contributors. The list is also pretty small, so many people just remove it. It is the default on Fedora and will stay this, legal reasons.
+Apps built with Fedoras built system and own runtime. Up to date, pretty secure, mostly not officially supported but packaged by Fedora Contributors. The list is also pretty small, so many people just remove it. It is the default on Fedora and will stay, legal reasons.
 
     flatpak remote-add --if-not-exists fedora https://registry.fedoraproject.org
     
@@ -49,11 +51,11 @@ Key expired 2021!
     flatpak remote-add --if-not-exists PureOS https://store.puri.sm/repo/stable/pureos.flatpakrepo
 
 ## [Igalia](https://software.igalia.com/)
-for [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/) and [Revolt](https://github.com/aperezdc/revolt/) (unmaintained)
+for [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/), the Webkit SDK and [Revolt](https://github.com/aperezdc/revolt/) (unmaintained)
 
     flatpak remote-add --if-not-exists igalia https://software.igalia.com/flatpak-refs/igalia.flatpakrepo
 
-# unstable Repositories
+# Unstable Repositories
 
 ## [Flathub Beta](https://discourse.flathub.org/t/how-to-use-flathub-beta/2111)
 
