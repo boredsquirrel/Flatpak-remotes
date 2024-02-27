@@ -7,28 +7,31 @@ Use the `--user` flag to install them for this user only and remove the `flatpak
 
 ## [Flathub](https://flathub.org)
 
-    flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+    flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 Flathub also has subsets, allowing you to exclude apps with certain antifeatures.
 
 #### Verified
 Only Apps supported by upstream (official) Developers end up here. Quite a few are missing
 
-    flatpak remote-add --if-not-exists --subset=verified flathub-verified https://flathub.org/repo/flathub.flatpakrepo
+    flatpak remote-add --if-not-exists --subset=verified flathub-verified https://dl.flathub.org/repo/flathub.flatpakrepo
 
 #### FLOSS
 Only Open Source Apps end up here. This should calm down Richard Stallman
 
-    flatpak remote-add --if-not-exists --subset=floss flathub-floss https://flathub.org/repo/flathub.flatpakrepo  
+    flatpak remote-add --if-not-exists --subset=floss flathub-floss https://dl.flathub.org/repo/flathub.flatpakrepo  
 
 #### FLOSS & Verified
 Least apps, highest trustworthiness
 
-    flatpak remote-add --if-not-exists --subset=verified_floss flathub-verified_floss https://flathub.org/repo/flathub.flatpakrepo
+    flatpak remote-add --if-not-exists --subset=verified_floss flathub-verified_floss https://dl.flathub.org/repo/flathub.flatpakrepo
 
-the `flatpak remote-modify --subset=X` command is currently broken and [there is no `subset=all`](https://github.com/flatpak/flatpak/issues/5637) so this is not recommended.
+Note:
 
-If someone finds the link to the docs, please post it, I am again unable to find it.
+The `--subset=` argument is currently incomplete as [there is no `subset=all`](https://github.com/flatpak/flatpak/issues/5637). Workarounds:
+- `flatpak remote-modify --subset= flathub` (will leave behind `xa.subset-is-set=true`)
+- `flatpak remote-delete --force flathub && [add the repo you want]`
+
 
 ## [Fedora Flatpaks](https://fedoraproject.org/wiki/SIGs/Flatpak#Why_do_we_need_Fedora_Flatpaks?)
 Apps built with Fedoras built system and own runtime. Up to date, pretty secure, mostly not officially supported but packaged by Fedora Contributors. The list is also pretty small, so many people just remove it. It is the default on Fedora and will stay, legal reasons.
