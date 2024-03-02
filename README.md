@@ -102,4 +102,4 @@ You can find all of them [here](https://cdn.kde.org/flatpak).
 ## WebKit SDK for Epiphany Canary
 (together with GNOME Nightly)
 
-    flatpak remote-add --user --if-not-exists https://software.igalia.com/flatpak-refs/webkit-sdk.flatpakrepo
+    flatpak remote-add --user --if-not-exists webkit-sdk https://software.igalia.com/flatpak-refs/webkit-sdk.flatpakrepo
