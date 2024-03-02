@@ -79,10 +79,14 @@ subsets should work here too
     flatpak remote-add --user --if-not-exists --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
 
 ## [KDE Nightly](https://userbase.kde.org/Tutorials/Flatpak#Nightly_KDE_apps)
-The repo is discontinued, now ever Nightly App has its own repo. You will always need the nightly runtime. Example for Dragon-nightly:
+The single repo is discontinued, now every nightly app has its own. You will always need the nightly runtime.
 
     flatpak remote-add --user --if-not-exists kde-runtime-nightly https://cdn.kde.org/flatpak/kde-runtime-nightly/kde-runtime-nightly.flatpakrepo
+
+Example for dragon-nightly:
+
     flatpak remote-add --user --if-not-exists dragon-nightly https://cdn.kde.org/flatpak/dragon-nightly/dragon-nightly.flatpakrepo
+    flatpak install dragon-nightly dragonplayer
 
 You can find all of them [here](https://cdn.kde.org/flatpak). 
 
