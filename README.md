@@ -61,25 +61,34 @@ For [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/), the
 
     flatpak remote-add --if-not-exists igalia https://software.igalia.com/flatpak-refs/igalia.flatpakrepo
 
+## [WinePak](https://winepak.github.io/)
+Flatpakked Windows Applications, Flathub seems to be needed for dependencies. [Github repo](https://github.com/winepak/winepak)
+
+    flatpak remote-add --if-not-exists winepak https://dl.winepak.org/repo/winepak.flatpakrepo
+
 # Unstable Repositories
 
 ## [Flathub Beta](https://discourse.flathub.org/t/how-to-use-flathub-beta/2111)
 
-    flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+    flatpak remote-add --user --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
 
 subsets should work here too
 
 ## EndlessOS Nightly
 
-    flatpak remote-add --if-not-exists --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
+    flatpak remote-add --user --if-not-exists --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
 
- ## [KDE Nightly](https://apps.kde.org/)
+## [KDE Nightly](https://userbase.kde.org/Tutorials/Flatpak#Nightly_KDE_apps)
+The repo is discontinued, now ever Nightly App has its own repo. You will always need the nightly runtime. Example for Dragon-nightly:
 
-    flatpak remote-add --if-not-exists kdeapps https://distribute.kde.org/kdeapps.flatpakrepo
-    
+    flatpak remote-add --user --if-not-exists kde-runtime-nightly https://cdn.kde.org/flatpak/kde-runtime-nightly/kde-runtime-nightly.flatpakrepo
+    flatpak remote-add --user --if-not-exists dragon-nightly https://cdn.kde.org/flatpak/dragon-nightly/dragon-nightly.flatpakrepo
+
+You can find all of them [here](https://cdn.kde.org/flatpak). 
+
 ## [GNOME Nightly](https://wiki.gnome.org/Apps/Nightly)
 
-    flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+    flatpak remote-add --user --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
     
 ## [Eclipse Nightly](http://eclipse.matbooth.co.uk/flatpak/nightlies.html)
 (Flathub needed for dependencies)
