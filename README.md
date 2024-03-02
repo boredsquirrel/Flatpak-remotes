@@ -1,7 +1,9 @@
 # Flatpak-remotes
 A list of public Flatpak repositories. Feel free to add missing ones!
 
-Use the `--user` flag to install them for this user only and remove the `flatpak` group / root privilege dependency. This will break some apps that rely on elevated privileges for hardware access, like [GPU Screen Recorder](https://flathub.org/apps/com.dec05eba.gpu_screen_recorder). When installing as system repo, use `usermod -aG flatpak $USER` or an equivalent command.
+Use the `--user` flag to install them for this user only and remove the `flatpak` group / root privilege dependency. This will break some apps that rely on elevated privileges for hardware access, like [GPU Screen Recorder](https://flathub.org/apps/com.dec05eba.gpu_screen_recorder), in exchange for less privileges neede (which may be an abstract security benefit.)
+
+When installing as system repo, use `usermod -aG flatpak $USER` or an equivalent command, to avoid needing the the `wheel` group.
 
 # Stable repositories
 
@@ -26,11 +28,11 @@ Least apps, highest trustworthiness
 
     flatpak remote-add --if-not-exists --subset=verified_floss flathub-verified_floss https://dl.flathub.org/repo/flathub.flatpakrepo
 
-Note:
+Note for changing from a subset to all:
 
 The `--subset=` argument is currently incomplete as [there is no `subset=all`](https://github.com/flatpak/flatpak/issues/5637). Workarounds:
 - `flatpak remote-modify --subset= flathub` (will leave behind `xa.subset-is-set=true`)
-- `flatpak remote-delete --force flathub && [add the repo you want]`
+- `flatpak remote-delete --force flathub && flatpak remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
 
 ## [Fedora Flatpaks](https://fedoraproject.org/wiki/SIGs/Flatpak#Why_do_we_need_Fedora_Flatpaks?)
