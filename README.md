@@ -97,9 +97,9 @@ You can find all of them [here](https://cdn.kde.org/flatpak).
 ## [Eclipse Nightly](http://eclipse.matbooth.co.uk/flatpak/nightlies.html)
 (Flathub needed for dependencies)
 
-    flatpak remote-add --if-not-exists eclipse-nightly https://download.eclipse.org/linuxtools/flatpak-I-builds/eclipse.flatpakrepo
+    flatpak remote-add --user --if-not-exists eclipse-nightly https://download.eclipse.org/linuxtools/flatpak-I-builds/eclipse.flatpakrepo
 
 ## WebKit SDK for Epiphany Canary
 (together with GNOME Nightly)
 
-    flatpak remote-add --if-not-exists https://software.igalia.com/flatpak-refs/webkit-sdk.flatpakrepo
+    flatpak remote-add --user --if-not-exists https://software.igalia.com/flatpak-refs/webkit-sdk.flatpakrepo
