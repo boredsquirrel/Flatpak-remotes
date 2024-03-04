@@ -3,7 +3,7 @@ A list of public Flatpak repositories. Feel free to add missing ones!
 
 Use the `--user` flag to install them for this user only and remove the `flatpak` group / root privilege dependency. This will break some apps that rely on elevated privileges for hardware access, like [GPU Screen Recorder](https://flathub.org/apps/com.dec05eba.gpu_screen_recorder), in exchange for an abstract security benefit.
 
-When installing as system repo, use `usermod -aG flatpak $USER` or an equivalent command, to avoid needing the the `wheel` group.
+When installing as system repo, use `usermod -aG flatpak $USER` or an equivalent command, to avoid needing to be in the `wheel` group.
 
 # Stable repositories
 
