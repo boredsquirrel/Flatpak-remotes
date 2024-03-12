@@ -62,6 +62,8 @@ For [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/), the
 
 subsets should work here too
 
+If apps have the same name, run them like this: `flatpak run --branch=beta org.gimp.GIMP`
+
 ## EndlessOS Nightly
 
     flatpak remote-add --user --if-not-exists --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
