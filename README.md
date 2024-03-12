@@ -64,6 +64,8 @@ For [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/), the
 ## [WinePak](https://winepak.github.io/)
 Flatpakked Windows Applications, Flathub seems to be needed for dependencies. [Github repo](https://github.com/winepak/winepak)
 
+seems to be down, strange website.
+
     flatpak remote-add --if-not-exists winepak https://dl.winepak.org/repo/winepak.flatpakrepo
 
 # Unstable Repositories
