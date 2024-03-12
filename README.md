@@ -54,21 +54,6 @@ For [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/), the
 
     flatpak remote-add --if-not-exists igalia https://software.igalia.com/flatpak-refs/igalia.flatpakrepo
 
-## ~~[EndlessOS](http://endlessm.github.io/eos-knowledge-lib/contributing)~~
-Key expired 2021!
-
-    #flatpak remote-add --if-not-exists --from eos-sdk #http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
-    
-
-## ~~[WinePak](https://winepak.github.io/)~~
-[Website seems to have been hijacked, DONT USE](https://github.com/winepak/winepak/issues/27)
-
-[This is what the website should look like](https://web.archive.org/web/20220317110404/http://www.winepak.org/)
-
-~~Flatpak-ed Windows Applications, Flathub is needed for dependencies. [Github repo](https://github.com/winepak/winepak)~~
-
-    #flatpak remote-add --if-not-exists winepak #https://dl.winepak.org/repo/winepak.flatpakrepo
-
 # Unstable Repositories
 
 ## [Flathub Beta](https://discourse.flathub.org/t/how-to-use-flathub-beta/2111)
@@ -106,3 +91,20 @@ You can find all of them [here](https://cdn.kde.org/flatpak).
 (together with GNOME Nightly)
 
     flatpak remote-add --user --if-not-exists webkit-sdk https://software.igalia.com/flatpak-refs/webkit-sdk.flatpakrepo
+
+# Warnings
+
+## ~~[EndlessOS](http://endlessm.github.io/eos-knowledge-lib/contributing)~~
+Key expired 2021!
+
+    #flatpak remote-add --if-not-exists --from eos-sdk #http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
+    
+
+## ~~[WinePak](https://winepak.github.io/)~~
+[Website seems to have been hijacked, DONT USE](https://github.com/winepak/winepak/issues/27)
+
+[This is what the website should look like](https://web.archive.org/web/20220317110404/http://www.winepak.org/)
+
+~~Flatpak-ed Windows Applications, Flathub is needed for dependencies. [Github repo](https://github.com/winepak/winepak)~~
+
+    #flatpak remote-add --if-not-exists winepak #https://dl.winepak.org/repo/winepak.flatpakrepo
