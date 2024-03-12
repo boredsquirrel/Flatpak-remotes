@@ -101,10 +101,6 @@ Key expired 2021!
     
 
 ## ~~[WinePak](https://winepak.github.io/)~~
-[Website seems to have been hijacked, DONT USE](https://github.com/winepak/winepak/issues/27)
-
-[This is what the website should look like](https://web.archive.org/web/20220317110404/http://www.winepak.org/)
-
-~~Flatpak-ed Windows Applications, Flathub is needed for dependencies. [Github repo](https://github.com/winepak/winepak)~~
+[Website seems to have been hijacked, DONT USE](https://github.com/winepak/winepak/issues/27), project is unmaintained for 6 years.
 
     #flatpak remote-add --if-not-exists winepak #https://dl.winepak.org/repo/winepak.flatpakrepo
