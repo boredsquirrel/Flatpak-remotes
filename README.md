@@ -43,13 +43,6 @@ Apps built with Fedoras built system and own runtime. Up to date, pretty secure,
 ## [ElementaryOS](https://appcenter.elementary.io/)
 
     flatpak remote-add --if-not-exists elementaryos https://flatpak.elementary.io/repo.flatpakrepo
-
-
-## ~~[EndlessOS](http://endlessm.github.io/eos-knowledge-lib/contributing)~~
-Key expired 2021!
-
-    flatpak remote-add --if-not-exists --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
-    
     
 ## [PureOS](https://puri.sm/posts/introducing-flatpaks-on-pureos/)
 Often outdated, but "more secure" apps, from the Purism developers.
@@ -61,12 +54,20 @@ For [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/), the
 
     flatpak remote-add --if-not-exists igalia https://software.igalia.com/flatpak-refs/igalia.flatpakrepo
 
-## [WinePak](https://winepak.github.io/)
-Flatpakked Windows Applications, Flathub seems to be needed for dependencies. [Github repo](https://github.com/winepak/winepak)
+## ~~[EndlessOS](http://endlessm.github.io/eos-knowledge-lib/contributing)~~
+Key expired 2021!
 
-seems to be down, strange website.
+    #flatpak remote-add --if-not-exists --from eos-sdk #http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
+    
 
-    flatpak remote-add --if-not-exists winepak https://dl.winepak.org/repo/winepak.flatpakrepo
+## ~~[WinePak](https://winepak.github.io/)~~
+[Website seems to have been hijacked, DONT USE](https://github.com/winepak/winepak/issues/27)
+
+[This is what the website should look like](https://web.archive.org/web/20220317110404/http://www.winepak.org/)
+
+~~Flatpak-ed Windows Applications, Flathub is needed for dependencies. [Github repo](https://github.com/winepak/winepak)~~
+
+    #flatpak remote-add --if-not-exists winepak #https://dl.winepak.org/repo/winepak.flatpakrepo
 
 # Unstable Repositories
 
