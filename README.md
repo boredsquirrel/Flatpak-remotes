@@ -80,6 +80,11 @@ Example for dragon-nightly:
 
 You can find all of them [here](https://cdn.kde.org/flatpak). 
 
+### KDE XWayland Videobridge Nightly
+Compatibility bridge to make screensharing for legacy apps work on Wayland, now as a Flatpak.
+
+    flatpak remote-add --user xwaylandvideobridge-nightly https://cdn.kde.org/flatpak/xwaylandvideobridge-nightly/xwaylandvideobridge-nightly.flatpakrepo
+
 ## [GNOME Nightly](https://wiki.gnome.org/Apps/Nightly)
 
     flatpak remote-add --user --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
