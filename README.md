@@ -105,7 +105,7 @@ Compatibility bridge to make screensharing for legacy apps work on Wayland, now 
 
     flatpak install --user https://gitlab.com/projects261/firefox-nightly-flatpak/-/raw/main/firefox-nightly.flatpakref
     
-### [Thunderbird Nightly Flatpak](https://gitlab.com/projects261/thunderbird-nightly-flatpak)
+### [Thunderbird Nightly](https://gitlab.com/projects261/thunderbird-nightly-flatpak)
 Flatpak build from the nightly/daily release binary. This command adds the remote.
 
     flatpak install --user https://gitlab.com/projects261/thunderbird-nightly-flatpak/-/raw/main/thunderbird-nightly.flatpakref
