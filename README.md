@@ -99,6 +99,11 @@ Compatibility bridge to make screensharing for legacy apps work on Wayland, now 
 
     flatpak remote-add --user --if-not-exists webkit-sdk https://software.igalia.com/flatpak-refs/webkit-sdk.flatpakrepo
 
+## [Thunderbird Nightly Flatpak](https://gitlab.com/projects261/thunderbird-nightly-flatpak)
+Flatpak build from the nightly/daily release binary. This command adds the remote.
+
+    flatpak install --user https://gitlab.com/projects261/thunderbird-nightly-flatpak/-/raw/main/thunderbird-nightly.flatpakref
+
 # Warnings
 
 ## ~~[EndlessOS](http://endlessm.github.io/eos-knowledge-lib/contributing)~~
