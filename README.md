@@ -99,10 +99,24 @@ Compatibility bridge to make screensharing for legacy apps work on Wayland, now 
 
     flatpak remote-add --user --if-not-exists webkit-sdk https://software.igalia.com/flatpak-refs/webkit-sdk.flatpakrepo
 
-## [Thunderbird Nightly Flatpak](https://gitlab.com/projects261/thunderbird-nightly-flatpak)
+## Firefox & Thunderbird
+
+### [Firefox Nightly](https://gitlab.com/projects261/firefox-nightly-flatpak)
+
+    flatpak install --user https://gitlab.com/projects261/firefox-nightly-flatpak/-/raw/main/firefox-nightly.flatpakref
+    
+### [Thunderbird Nightly Flatpak](https://gitlab.com/projects261/thunderbird-nightly-flatpak)
 Flatpak build from the nightly/daily release binary. This command adds the remote.
 
     flatpak install --user https://gitlab.com/projects261/thunderbird-nightly-flatpak/-/raw/main/thunderbird-nightly.flatpakref
+
+### [Firefox ESR](https://gitlab.com/projects261/firefox-esr-flatpak)
+
+    flatpak install --user https://gitlab.com/projects261/firefox-esr-flatpak/-/raw/main/firefox-esr.flatpakref
+
+### [Firefox Dev Edition](https://gitlab.com/projects261/firefox-dev-flatpak)
+
+    flatpak install --user https://gitlab.com/projects261/firefox-dev-flatpak/-/raw/main/firefox-dev.flatpakref
 
 # Warnings
 
