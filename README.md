@@ -118,6 +118,10 @@ Flatpak build from the nightly/daily release binary. This command adds the remot
 
     flatpak install --user https://gitlab.com/projects261/firefox-dev-flatpak/-/raw/main/firefox-dev.flatpakref
 
+## Other Projects
+[Davinci Resolve Flatpak](https://github.com/pobthebuilder/resolve-flatpak) allows packaging it locally.
+
+
 # Warnings
 
 ## ~~[EndlessOS](http://endlessm.github.io/eos-knowledge-lib/contributing)~~
