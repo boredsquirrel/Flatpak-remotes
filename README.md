@@ -1,9 +1,15 @@
-# Flatpak-remotes
+# Flatpak Remotes
 A list of public Flatpak repositories. Feel free to add missing ones!
 
 Use the `--user` flag to install them for this user only and remove the `flatpak` group / root privilege dependency. This will break some apps that rely on elevated privileges for hardware access, like [GPU Screen Recorder](https://flathub.org/apps/com.dec05eba.gpu_screen_recorder), in exchange for an abstract security benefit.
 
 When installing as system repo, use `usermod -aG flatpak $USER` or an equivalent command, to avoid needing to be in the `wheel` group.
+
+To list the contents of a remote, use:
+
+```
+flatpak remote-ls REMOTENAME
+```
 
 # Stable repositories
 
@@ -60,7 +66,7 @@ For [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/), the
 
     flatpak remote-add --user --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
 
-subsets should work here too
+subsets work here too, see above
 
 If apps have the same name, run them like this: `flatpak run --branch=beta org.gimp.GIMP`
 
