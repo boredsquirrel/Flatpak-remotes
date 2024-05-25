@@ -86,6 +86,7 @@ Compatibility bridge to make screensharing for legacy apps work on Wayland, now 
     flatpak remote-add --user xwaylandvideobridge-nightly https://cdn.kde.org/flatpak/xwaylandvideobridge-nightly/xwaylandvideobridge-nightly.flatpakrepo
 
 ## [GNOME Nightly](https://wiki.gnome.org/Apps/Nightly)
+Also contains GIMP nightly (whereas GIMP beta is on Flathub-beta)
 
     flatpak remote-add --user --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
     
