@@ -62,26 +62,24 @@ For [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/), the
 
 # Unstable Repositories
 
+Add `--user` to the command, to install these apps only for this user.
+
 ## [Flathub Beta](https://discourse.flathub.org/t/how-to-use-flathub-beta/2111)
 
-    flatpak remote-add --user --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
+    flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
 
 subsets work here too, see above
 
 If apps have the same name, run them like this: `flatpak run --branch=beta org.gimp.GIMP`
 
-## EndlessOS Nightly
-
-    flatpak remote-add --user --if-not-exists --from eos-sdk http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
-
 ## [KDE Nightly](https://userbase.kde.org/Tutorials/Flatpak#Nightly_KDE_apps)
 The single repo is discontinued, now every nightly app has its own. You will always need the nightly runtime.
 
-    flatpak remote-add --user --if-not-exists kde-runtime-nightly https://cdn.kde.org/flatpak/kde-runtime-nightly/kde-runtime-nightly.flatpakrepo
+    flatpak remote-add --if-not-exists kde-runtime-nightly https://cdn.kde.org/flatpak/kde-runtime-nightly/kde-runtime-nightly.flatpakrepo
 
 Example for dragon-nightly:
 
-    flatpak remote-add --user --if-not-exists dragon-nightly https://cdn.kde.org/flatpak/dragon-nightly/dragon-nightly.flatpakrepo
+    flatpak remote-add --if-not-exists dragon-nightly https://cdn.kde.org/flatpak/dragon-nightly/dragon-nightly.flatpakrepo
     flatpak install dragon-nightly dragonplayer
 
 You can find all of them [here](https://cdn.kde.org/flatpak). 
@@ -89,41 +87,41 @@ You can find all of them [here](https://cdn.kde.org/flatpak).
 ### KDE XWayland Videobridge Nightly
 Compatibility bridge to make screensharing for legacy apps work on Wayland, now as a Flatpak.
 
-    flatpak remote-add --user xwaylandvideobridge-nightly https://cdn.kde.org/flatpak/xwaylandvideobridge-nightly/xwaylandvideobridge-nightly.flatpakrepo
+    flatpak remote-add xwaylandvideobridge-nightly https://cdn.kde.org/flatpak/xwaylandvideobridge-nightly/xwaylandvideobridge-nightly.flatpakrepo
 
 ## [GNOME Nightly](https://wiki.gnome.org/Apps/Nightly)
 Also contains GIMP nightly (whereas GIMP beta is on Flathub-beta)
 
-    flatpak remote-add --user --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
+    flatpak remote-add --if-not-exists gnome-nightly https://nightly.gnome.org/gnome-nightly.flatpakrepo
     
 ## [Eclipse Nightly](http://eclipse.matbooth.co.uk/flatpak/nightlies.html)
 (Flathub needed for dependencies)
 
-    flatpak remote-add --user --if-not-exists eclipse-nightly https://download.eclipse.org/linuxtools/flatpak-I-builds/eclipse.flatpakrepo
+    flatpak remote-add --if-not-exists eclipse-nightly https://download.eclipse.org/linuxtools/flatpak-I-builds/eclipse.flatpakrepo
 
 ## WebKit SDK for Epiphany Canary
 (together with GNOME Nightly)
 
-    flatpak remote-add --user --if-not-exists webkit-sdk https://software.igalia.com/flatpak-refs/webkit-sdk.flatpakrepo
+    flatpak remote-add --if-not-exists webkit-sdk https://software.igalia.com/flatpak-refs/webkit-sdk.flatpakrepo
 
 ## Firefox & Thunderbird
 
 ### [Firefox Nightly](https://gitlab.com/projects261/firefox-nightly-flatpak)
 
-    flatpak install --user https://gitlab.com/projects261/firefox-nightly-flatpak/-/raw/main/firefox-nightly.flatpakref
+    flatpak install https://gitlab.com/projects261/firefox-nightly-flatpak/-/raw/main/firefox-nightly.flatpakref
     
 ### [Thunderbird Nightly](https://gitlab.com/projects261/thunderbird-nightly-flatpak)
 Flatpak build from the nightly/daily release binary. This command adds the remote.
 
-    flatpak install --user https://gitlab.com/projects261/thunderbird-nightly-flatpak/-/raw/main/thunderbird-nightly.flatpakref
+    flatpak install https://gitlab.com/projects261/thunderbird-nightly-flatpak/-/raw/main/thunderbird-nightly.flatpakref
 
 ### [Firefox ESR](https://gitlab.com/projects261/firefox-esr-flatpak)
 
-    flatpak install --user https://gitlab.com/projects261/firefox-esr-flatpak/-/raw/main/firefox-esr.flatpakref
+    flatpak install https://gitlab.com/projects261/firefox-esr-flatpak/-/raw/main/firefox-esr.flatpakref
 
 ### [Firefox Dev Edition](https://gitlab.com/projects261/firefox-dev-flatpak)
 
-    flatpak install --user https://gitlab.com/projects261/firefox-dev-flatpak/-/raw/main/firefox-dev.flatpakref
+    flatpak install https://gitlab.com/projects261/firefox-dev-flatpak/-/raw/main/firefox-dev.flatpakref
 
 ## Other Projects
 [Davinci Resolve Flatpak](https://github.com/pobthebuilder/resolve-flatpak) allows packaging it locally.
@@ -134,7 +132,7 @@ Flatpak build from the nightly/daily release binary. This command adds the remot
 ## ~~[EndlessOS](http://endlessm.github.io/eos-knowledge-lib/contributing)~~
 Key expired 2021!
 
-    #flatpak remote-add --if-not-exists --from eos-sdk #http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
+    #flatpak remote-add --from eos-sdk #http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
     
 
 ## ~~[WinePak](https://winepak.github.io/)~~
