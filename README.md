@@ -133,7 +133,11 @@ Flatpak build from the nightly/daily release binary. This command adds the remot
 Key expired 2021!
 
     #flatpak remote-add --from eos-sdk #http://endlessm.github.io/eos-knowledge-lib/eos-sdk.flatpakrepo
-    
+
+## ~~[Igalia Webkit SDK](https://github.com/Igalia/webkit-flatpak-sdk)~~
+Archived repository
+
+    #flatpak remote-add --user --if-not-exists webkit https://software.igalia.com/flatpak-refs/webkit-sdk.flatpakrepo
 
 ## ~~[WinePak](https://winepak.github.io/)~~
 [Website seems to have been hijacked, DONT USE](https://github.com/winepak/winepak/issues/27), project is unmaintained for 6 years.
