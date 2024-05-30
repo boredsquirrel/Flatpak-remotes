@@ -19,6 +19,8 @@ flatpak remote-ls REMOTENAME
 
 Flathub also has subsets, allowing you to exclude apps with certain antifeatures.
 
+(*If you use the terminal, you can add the unfiltered and a filtered remote. If the app is in the filtered one, you will get 2 possible options.*)
+
 #### Verified
 Only Apps supported by upstream (official) Developers end up here. Quite a few are missing
 
@@ -34,12 +36,26 @@ Least apps, highest trustworthiness
 
     flatpak remote-add --if-not-exists --subset=verified_floss flathub-verified_floss https://dl.flathub.org/repo/flathub.flatpakrepo
 
-Note for changing from a subset to all:
+### Modifying an existing remote
 
+#### From restricted to unfiltered
 The `--subset=` argument is currently incomplete as [there is no `subset=all`](https://github.com/flatpak/flatpak/issues/5637). Workarounds:
-- `flatpak remote-modify --subset= flathub` (will leave behind `xa.subset-is-set=true`)
-- `flatpak remote-delete --force flathub && flatpak remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
 
+```
+# normal method
+# will leave behind the info "xa.subset-is-set=true"
+flatpak remote-modify --subset= flathub
+
+# clean method
+# --force will not remove any apps or app data
+flatpak remote-delete --force flathub && flatpak remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
+```
+
+#### From unfiltered to restricted
+
+```
+flatpak remote-modify --subset=verified flathub
+```
 
 ## [Fedora Flatpaks](https://fedoraproject.org/wiki/SIGs/Flatpak#Why_do_we_need_Fedora_Flatpaks?)
 Apps built with Fedoras built system and own runtime. Up to date, pretty secure, mostly not officially supported but packaged by Fedora Contributors. The list is also pretty small, so many people just remove it. It is the default on Fedora and will stay, legal reasons.
