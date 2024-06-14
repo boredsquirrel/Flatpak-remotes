@@ -48,7 +48,7 @@ flatpak remote-modify --subset= flathub
 
 # clean method
 # --force will not remove any apps or app data
-flatpak remote-delete --force flathub && flatpak remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo`
+flatpak remote-delete --force flathub && flatpak remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 ```
 
 #### From unfiltered to restricted
