@@ -58,9 +58,9 @@ flatpak remote-modify --subset=verified flathub
 ```
 
 ## [Fedora Flatpaks](https://fedoraproject.org/wiki/SIGs/Flatpak#Why_do_we_need_Fedora_Flatpaks?)
-Apps built with Fedoras built system and own runtime. Up to date, pretty secure, mostly not officially supported but packaged by Fedora Contributors. The list is also pretty small, so many people just remove it. It is the default on Fedora and will stay, legal reasons.
+Apps built with Fedoras built system and own runtime, from RPMs. Up to date, secure, mostly not officially supported but packaged by Fedora contributors. It is used for preinstalled applications on Atomic Fedora and the list of packages is growing to nearly the entire KDE Suite and more. Still, fewer packages and many people replace it with Flathub.
 
-    flatpak remote-add --if-not-exists fedora https://registry.fedoraproject.org
+    flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
     
 ## [ElementaryOS](https://appcenter.elementary.io/)
 
