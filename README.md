@@ -65,7 +65,20 @@ Apps built with Fedoras built system and own runtime, from RPMs. Up to date, sec
 ## [ElementaryOS](https://appcenter.elementary.io/)
 
     flatpak remote-add --if-not-exists elementaryos https://flatpak.elementary.io/repo.flatpakrepo
-    
+
+## [EndlessOS](https://www.endlessos.org/)
+It seems manually downloading the GPG key is needed
+
+    wget https://origin.ostree.endlessm.com/keys/eos-flatpak-keyring.gpg
+
+Then there are 2 repos, one for the educational apps
+
+    flatpak remote-add --gpg-import=eos-flatpak-keyring.gpg eos-apps https://ostree.endlessm.com/ostree/eos-apps
+
+And one for the development SDK
+
+    flatpak remote-add --gpg-import=eos-flatpak-keyring.gpg eos-sdk https://ostree.endlessm.com/ostree/eos-sdk
+
 ## [PureOS](https://puri.sm/posts/introducing-flatpaks-on-pureos/)
 Often outdated, but "more secure" apps, from the Purism developers.
 
