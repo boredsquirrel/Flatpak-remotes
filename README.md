@@ -1,15 +1,27 @@
 # Flatpak Remotes
 A list of public Flatpak repositories. Feel free to add missing ones!
 
+Note: RedHat has one or wants to build one, but it will likely not be public.
+
+## ℹ️ Usage
+
+### User & System Flatpaks
 Use the `--user` flag to install them for this user only and remove the `flatpak` group / root privilege dependency. This will break some apps that rely on elevated privileges for hardware access, like [GPU Screen Recorder](https://flathub.org/apps/com.dec05eba.gpu_screen_recorder), in exchange for an abstract security benefit.
 
 When installing as system repo, use `usermod -aG flatpak $USER` or an equivalent command, to avoid needing to be in the `wheel` group.
 
+### View Installed Repos
+
+    flatpak remotes
+### Inspect A Repo
 To list the contents of a remote, use:
 
-```
-flatpak remote-ls REMOTENAME
-```
+    flatpak remote-ls REMOTENAME
+
+### Repo Subsets
+See below under "Flathub"
+
+---
 
 # Stable repositories
 
@@ -40,25 +52,21 @@ Least apps, highest trustworthiness
 
 #### From restricted to unfiltered
 The `--subset=` argument is currently incomplete as [there is no `subset=all`](https://github.com/flatpak/flatpak/issues/5637). Workarounds:
-
-```
-# normal method
-# will leave behind the info "xa.subset-is-set=true"
-flatpak remote-modify --subset= flathub
-
-# clean method
-# --force will not remove any apps or app data
-flatpak remote-delete --force flathub && flatpak remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-```
+    
+    # normal method
+    # will leave behind the info "xa.subset-is-set=true"
+    flatpak remote-modify --subset= flathub
+    
+    # clean method
+    # --force will not remove any apps or app data
+    flatpak remote-delete --force flathub && flatpak remote-add flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
 #### From unfiltered to restricted
 
-```
-flatpak remote-modify --subset=verified flathub
-```
+    flatpak remote-modify --subset=verified flathub
 
 ## [Fedora Flatpaks](https://fedoraproject.org/wiki/SIGs/Flatpak#Why_do_we_need_Fedora_Flatpaks?)
-Apps built with Fedoras built system and own runtime, from RPMs. Up to date, secure, mostly not officially supported but packaged by Fedora contributors. It is used for preinstalled applications on Atomic Fedora and the list of packages is growing to nearly the entire KDE Suite and more. Still, fewer packages and many people replace it with Flathub.
+Apps built with Fedoras built system and own runtime, from RPMs. Up to date, secure, mostly not officially supported but packaged by Fedora contributors. It is used for preinstalled applications on Atomic Fedora and the list of packages is growing to nearly the entire KDE $ GNOME Suite and more. Still, fewer packages and many people replace it with Flathub.
 
     flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
     
@@ -156,7 +164,10 @@ Flatpak build from the nightly/daily release binary. This command adds the remot
 [Davinci Resolve Flatpak](https://github.com/pobthebuilder/resolve-flatpak) allows packaging it locally.
 
 
-# Warnings
+# ⚠️ Warnings
+
+> [!WARNING]
+> These Repositories are outdated, abandoned or even possibly taken by malicious actors.
 
 ## ~~[EndlessOS](http://endlessm.github.io/eos-knowledge-lib/contributing)~~
 Key expired 2021!
