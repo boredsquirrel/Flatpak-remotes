@@ -1,7 +1,8 @@
 # Flatpak Remotes
 A list of public Flatpak repositories. Feel free to add missing ones!
 
-Note: RedHat has one or wants to build one, but it will likely not be public.
+> [!NOTE]
+> RedHat has one or wants to build one, but it will likely not be public.
 
 ## ℹ️ Usage
 
@@ -29,7 +30,8 @@ See below under "Flathub"
 
     flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 
-Flathub also has subsets, allowing you to exclude apps with certain antifeatures.
+> [!NOTE]
+> Flathub also has subsets, allowing you to exclude apps with certain antifeatures.
 
 (*If you use the terminal, you can add the unfiltered and a filtered remote. If the app is in the filtered one, you will get 2 possible options.*)
 
@@ -66,7 +68,7 @@ The `--subset=` argument is currently incomplete as [there is no `subset=all`](h
     flatpak remote-modify --subset=verified flathub
 
 ## [Fedora Flatpaks](https://fedoraproject.org/wiki/SIGs/Flatpak#Why_do_we_need_Fedora_Flatpaks?)
-Apps built with Fedoras built system and own runtime, from RPMs. Up to date, secure, mostly not officially supported but packaged by Fedora contributors. It is used for preinstalled applications on Atomic Fedora and the list of packages is growing to nearly the entire KDE $ GNOME Suite and more. Still, fewer packages and many people replace it with Flathub.
+Apps built with Fedoras built system and own runtime, from RPMs. Up to date, secure, mostly not officially supported but packaged by Fedora contributors. It is used for preinstalled applications on Atomic Fedora and the list of packages is growing to nearly the entire KDE & GNOME Suite and more. Still, fewer packages and many people replace it with Flathub.
 
     flatpak remote-add --if-not-exists fedora oci+https://registry.fedoraproject.org
     
@@ -86,6 +88,9 @@ Then there are 2 repos, one for the educational apps
 And one for the development SDK
 
     flatpak remote-add --gpg-import=eos-flatpak-keyring.gpg eos-sdk https://ostree.endlessm.com/ostree/eos-sdk
+
+> [!NOTE]
+> [Endless Key](https://flathub.org/apps/org.endlessos.Key) is verified and available on Flathub.
 
 ## [PureOS](https://puri.sm/posts/introducing-flatpaks-on-pureos/)
 Often outdated, but "more secure" apps, from the Purism developers.
