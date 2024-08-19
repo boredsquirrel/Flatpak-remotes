@@ -102,6 +102,7 @@ For [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/), the
 Add `--user` to the command, to install these apps only for this user.
 
 ## [Flathub Beta](https://discourse.flathub.org/t/how-to-use-flathub-beta/2111)
+This has support for subsets too, like `verified.`
 
     flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo
 
