@@ -149,6 +149,11 @@ Also contains GIMP nightly (whereas GIMP beta is on Flathub-beta)
 
 ## Firefox & Thunderbird
 
+> [!Warning]
+> These repos may have outdated signatures.
+> (Nov. 2024)
+
+
 ### [Firefox Nightly](https://gitlab.com/projects261/firefox-nightly-flatpak)
 
     flatpak install https://gitlab.com/projects261/firefox-nightly-flatpak/-/raw/main/firefox-nightly.flatpakref
