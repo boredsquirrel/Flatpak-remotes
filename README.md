@@ -97,6 +97,10 @@ Often outdated, but "more secure" apps, from the Purism developers.
 
     flatpak remote-add --if-not-exists PureOS https://store.puri.sm/repo/stable/pureos.flatpakrepo
 
+## [BrixIT](https://flatpak.brixit.nl/repo/)
+[Martijn Braam](https://github.com/martijnbraam)'s repository.
+Curently mainly focused on the [Megapixels](https://gitlab.com/megapixels-org/Megapixels) camera application for Linux phones.
+
 ## [Igalia](https://software.igalia.com/)
 For [Gobby](https://gobby.github.io/), [Linphone](https://gobby.github.io/), the Webkit SDK and [Revolt](https://github.com/aperezdc/revolt/) (unmaintained)
 
