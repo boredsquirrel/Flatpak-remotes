@@ -175,6 +175,20 @@ Flatpak build from the nightly/daily release binary. This command adds the remot
 
     flatpak install https://gitlab.com/projects261/firefox-dev-flatpak/-/raw/main/firefox-dev.flatpakref
 
+### [Ghostty CI Builds](https://github.com/ghostty-org/ghostty/actions/workflows/flatpak.yml)
+
+As long as Ghostty is [not on flathub](https://github.com/ghostty-org/ghostty/discussions/3201#discussioncomment-15991813)
+the CI builds can be used:
+
+1. Go to [the flatpak builds](https://github.com/ghostty-org/ghostty/actions/workflows/flatpak.yml) click on the top most build.
+2. Click the download button next to `com.mitchellh.ghostty-aarch64.flatpak` or `com.mitchellh.ghostty-x86_64.flatpak`.
+3. Unpack and install:
+
+```bash
+    unzip com.mitchellh.ghostty-*.flatpak.zip 
+    flatpak --user install --bundle com.mitchellh.ghostty
+```
+
 ## Other Projects
 [Davinci Resolve Flatpak](https://github.com/pobthebuilder/resolve-flatpak) allows packaging it locally.
 
