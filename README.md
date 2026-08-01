@@ -175,6 +175,10 @@ Flatpak build from the nightly/daily release binary. This command adds the remot
 
     flatpak install https://gitlab.com/projects261/firefox-dev-flatpak/-/raw/main/firefox-dev.flatpakref
 
+## [Orion Beta](https://www.orionbrowser.com)
+
+    flatpak remote-add --if-not-exists orion-beta https://flatpak.orionbrowser.com/orion-beta.flatpakrepo
+
 ## Other Projects
 [Davinci Resolve Flatpak](https://github.com/pobthebuilder/resolve-flatpak) allows packaging it locally.
 
