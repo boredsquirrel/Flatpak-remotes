@@ -1,3 +1,6 @@
+# List is updated on Codeberg, NO MORE UPDATES HERE
+https://codeberg.org/boredsquirrel/Flatpak-remotes
+
 # Flatpak Remotes
 A list of public Flatpak repositories. Feel free to add missing ones!
 
